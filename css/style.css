@@ -23,12 +23,11 @@ h1{
 }
 
 /* --- Proprietà main --- */
-  /* Container ha volutamente una dimensione minima di Zpx, perchè avere una carta sotto l'altra non avrebbe più senso in questo gioco. Vale lo stesso per max width, non voglio avere più di 4 carte in fila (questo mi evita anche di creare 1 sezione per ogni riga di carte) */
 .container{
   text-align: center;
   width: 70%;
   min-width: 800px;
-  margin: 20px auto;
+  margin: 20px auto 0px;
 }
   /* Proprietà generica della carta */
 .carta{
@@ -64,16 +63,24 @@ visibility: hidden;
   background-image: none;
 }
 .carta:hover > h3, .carta:hover > img, #scoperta > img, #scoperta > h3{
-  visibility:visible;
+  visibility: visible;
 }
 .carta:hover >h3{
   color: orange;
 }
 
+/* --- Proprietà footer --- */
+footer{
+  height: 30px;
+  line-height: 30px;
+  text-align: center;
+  font-size: 18px;
+  font-weight: bold;
+  min-width: 800px;
+}
 
-
-
-/* Livello superiore che copre la carta fino al passaggio del mouse */
+  /* *BONUS* Container ha volutamente una dimensione minima di Zpx, perchè avere una carta sotto l'altra non avrebbe più senso in questo gioco. Vale lo stesso per max width, non voglio avere più di 4 carte in fila (questo mi evita anche di creare 1 sezione per ogni riga di carte) */
+/* BONUS Livello superiore che copre la carta fino al passaggio del mouse */
 /* .coperta{
   position: absolute;
   top: 0;
