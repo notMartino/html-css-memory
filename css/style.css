@@ -1,0 +1,29 @@
+/* --- Proprietà generali --- */
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body{
+  font-family: 'Nerko One', cursive;
+  background-color: lightblue;
+}
+
+.contanier{
+  width: 80%;
+  min-width: 1080px;
+  margin: 20px auto;
+}
+
+/* --- Proprietà header --- */
+header{
+  height: 120px;
+  text-align: center;
+}
+h1{
+  font-size: 80px;
+  line-height: 120px;
+  color: white;
+  text-shadow: 2px 2px black;
+}
