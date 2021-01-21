@@ -1,0 +1,88 @@
+/* --- Proprietà generali --- */
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body{
+  font-family: 'Nerko One', cursive;
+  background-color: lightblue;
+}
+
+/* --- ***BONUS*** Div superiore che copre la carta fino al passaggio del mouse --- */
+
+/* --- Proprietà header --- */
+header{
+  min-height: 100px;
+  text-align: center;
+  min-width: 800px;
+}
+h1{
+  font-size: 90px;
+  line-height: 100px;
+  color: white;
+  text-shadow: 2px 2px black;
+}
+
+/* --- Proprietà main --- */
+.container{
+  text-align: center;
+  width: 70%;
+  min-width: 800px;
+  margin: 20px auto 0px;
+}
+
+  /* Proprietà generica della carta */
+.carta{
+  position: relative;
+  min-height: 200px;
+  width: 18%;
+  display: inline-block;
+  background-color: white;
+  margin: 0px 1% 20px;
+  border-radius: 15px;
+  padding: 20px;
+  text-align: center;
+  vertical-align: top;
+  background-size: contain;
+}
+  /* Titoletto carta */
+.carta > h3{
+  font-size: 25px;
+  color: violet;
+  text-shadow: 2px 2px black;
+  font-weight: 600;
+}
+/* --- Img carta--- */
+.carta > img{
+width: 90%;
+}
+
+/* Overlay che copre la carta */
+.coperta{
+  height: 100%;
+  width: 100%;
+  border-radius: 15px;
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 99;
+  background-image: url("../img/pattern.png");
+  background-size:contain;
+}
+.carta:hover .coperta{
+  display: none;
+}
+.carta:hover > h3{
+  color: orange;
+}
+
+/* --- Proprietà footer --- */
+footer{
+  height: 30px;
+  line-height: 30px;
+  text-align: center;
+  font-size: 18px;
+  font-weight: bold;
+  min-width: 800px;
+}
